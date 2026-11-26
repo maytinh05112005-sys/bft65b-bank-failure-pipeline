@@ -1,0 +1,4 @@
+Engine,Execution_Mode,Execution_Time_Sec,Speedup_vs_Pandas,Peak_Process_RSS_MB,Net_RAM_Growth_MB,Memory_Profiling_Method,Scalability_Limit
+Pandas (Baseline),Eager / Single-Threaded,10.72,1.0,2519.3,799.6,psutil Process RSS (OS Resident),~5-10M rows on 16GB Laptop
+Polars (Lazy),Lazy / Vectorized Multi-Threaded (Rust),4.427,2.42,1988.1,1790.7,psutil Process RSS (OS Resident),~50-100M rows on Laptop (Streaming)
+PySpark (Local),Distributed Catalyst / Local Multi-core,73.04,0.15,1202.5,1202.5,psutil Process RSS (Driver + JVM),Billions of rows (Distributed Cluster)

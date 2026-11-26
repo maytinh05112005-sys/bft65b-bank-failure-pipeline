@@ -1,0 +1,6 @@
+Check,Count,Pct,Action
+Non-positive Total Assets (ASSET <= 0),0,0.0,Filter out (corrupted report)
+Negative Deposits (DEP < 0),0,0.0,Filter out / Set to Null
+Negative Equity (EQ < 0),15659,0.9306,Retain (economically valid signal of insolvency under PCA)
+Negative Gross Loans (LNLSGR < 0),32,0.0019,Filter out / Set to Null
+Extreme Outlier ROA (< -50% or > 50%),1056,0.0628,Winsorize / Robust scaling in Part 4

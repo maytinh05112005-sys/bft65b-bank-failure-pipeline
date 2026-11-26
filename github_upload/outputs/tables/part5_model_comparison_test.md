@@ -1,9 +1,0 @@
-# Part 5: Out-of-Time Test Set Model Evaluation Table (2008 - 2012)
-
-Evaluated on 157,851 bank-quarters with 1,882 true bank failures.
-
-| Model | ROC_AUC | PR_AUC | Brier_Score | Threshold | Recall_Pct | Precision_Pct | False_Alarms_FP | Missed_Failures_FN | Total_Cost_Units |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Baseline Logistic Regression | 0.9772 | 0.4847 | 0.0262 | 0.5 | 84.43 | 25.04 | 4758 | 293 | 48708.0 |
-| LightGBM Early-Warning Model | 0.9795 | 0.5901 | 0.0227 | 0.04 | 96.65 | 7.96 | 21022 | 63 | 30472.0 |
-| PySpark MLlib (Demo) | 0.9251 | N/A (Standard Demo) | N/A | 0.5 | N/A | N/A | N/A | N/A | N/A |

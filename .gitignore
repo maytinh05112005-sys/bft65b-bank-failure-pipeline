@@ -1,0 +1,13 @@
+# Data files (Do not commit to Git per exam instructions)
+data_raw/
+data_processed/
+
+# Portable tools & dependencies
+tools/
+outputs/.matplotlib/
+
+# Python cache & temp files
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
